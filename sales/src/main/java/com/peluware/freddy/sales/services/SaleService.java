@@ -96,6 +96,10 @@ public class SaleService implements MongoCrudService<Sale, SaleDto, String, Sale
         }
     }
 
+    public String noop() {
+        System.out.println("noop");
+        return "noop";
+    }
 
     @Override
     public Class<Sale> getEntityClass() {
